@@ -57,6 +57,10 @@ static LRESULT MouseProc(int nCode, WPARAM wParam, LPARAM lParam) {
 		eventType = MouseEventType::RightButtonDown;
 	} else if (wParam == WM_RBUTTONUP) {
 		eventType = MouseEventType::RightButtonUp;
+	} else if (wParam == WM_MBUTTONDOWN) {
+		eventType = MouseEventType::MiddleButtonDown;
+	} else if (wParam == WM_MBUTTONUP) {
+		eventType = MouseEventType::MiddleButtonUp;
 	} else if (wParam == WM_MOUSEMOVE) {
 		eventType = MouseEventType::MouseMove;
 	} else if (wParam == WM_MOUSEWHEEL) {

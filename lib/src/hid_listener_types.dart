@@ -9,6 +9,8 @@ enum MouseButtonEventType {
   leftButtonDown,
   rightButtonUp,
   rightButtonDown,
+  middleButtonUp,
+  middleButtonDown,
 }
 
 class MouseButtonEvent extends MouseEvent {
